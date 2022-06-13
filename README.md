@@ -1,9 +1,9 @@
-## Trust Registry
+# Trust Registry
 > Enabling the interoperability layer between multiple roots of trust.
 
 ![build](https://github.com/veri5/trust-registry/actions/workflows/ci.yml/badge.svg)
 
-This is serverless service built in Rust. It consists of an API Gateway backed by Lambda functions and a scalable database for policy storage. It uses an Hexagonal Architecture pattern to decouple the [entry points](./src/entrypoints/), from the main [domain logic](./src/lib.rs), the [storage component](./src/store), and the [event bus component](./src/event_bus).
+This is serverless service built in Rust. It consists of an API Gateway backed by Lambda functions and a scalable database for policy-graph storage. It uses an [Hexagonal Architecture pattern](https://aws.amazon.com/blogs/compute/developing-evolutionary-architecture-with-aws-lambda/) to decouple the [entry points](./src/entrypoints/), from the main [domain logic](./src/lib.rs), the [storage component](./src/store), and the [event bus component](./src/event_bus).
 
 ## High-level architecture
 This is a high-level view of how the different components interact with each other.
